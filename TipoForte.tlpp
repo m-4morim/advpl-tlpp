@@ -1,0 +1,12 @@
+User Function TipoForte()
+Local cTexto as Char
+Local nNumero as Numeric
+Local dData as Date
+Local aMatriz as Array
+Local oObjeto as Object
+Local lLogical as Logical
+
+cTexto := "Texto"
+dData := "Texto"
+
+Return
