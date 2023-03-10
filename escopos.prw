@@ -6,17 +6,35 @@ Static: Visível em todas as funções dentro do fonte onde ela foi criada;
         Pode ser declarado fora da função (no cabeçalho do fonte).
 */
 
-User Function func1()
+Static cVar5 := "Static"
+
+User Function Func1()
 Local cVar1 := "Local"
 Private cVar2 := "Private"
 
-U_func2()
+U_Func4()
+
+U_Func2()
+
+Alert(cVar3)
+Alert(cVar4)
 
 Return
 
-User Function func2()
+User Function Func2()
+Public cVar3 := "Public"
+Private cVar4 := "Private cVar4"
 
 Alert(cVar2) //Private
-Alert(cVar1) //Local
+Alert(cVar3) //Public
+
+U_Func3()
+
+Return
+
+User Function Func3()
+
+Alert(cVar3) //Public
+Alert(cVar2) //Private
 
 Return
