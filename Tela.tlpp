@@ -1,0 +1,16 @@
+/*
+    - A utilização de nomes mais longos.
+        Exemplo:
+            AdvPL: Tamanho 10 caracteres
+                    U_EXERCI CIOAULA6
+                    U_EXERCI CIOAULA7 (Teriam o mesmo nome)
+
+            TLPP: Tamanho 255 caracteres
+
+    - Tipagem forte de variáveis.
+        TLPP: Utilizar a tipagem forte de variáveis
+                Pode evitar erros de execução (Typemismatch)
+
+    - Não possui suporte para desenvolvimento utilizando a arquitetura MVC
+        - Porque respeita o escopo das funções e o MVC possui funções estáticas
+*/
