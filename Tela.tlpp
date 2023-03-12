@@ -20,17 +20,19 @@ User Function MinhaPrimeiraTela()
 Local oDlg as Object
 Local oGet as Object
 Local cNome as Char
+Local oBotao as Object
 
 cNome := Space(30)
 
 DEFINE MSDIALOG oDlg TITLE "Minha Primeira Tela"
-oDlg:nWidth:= 200 //pixel
-oDlg:Height:= 200
+oDlg:nWidth:= 400 //pixel
+oDlg:Height:= 300
 
-@06,@10 SAY "Digite o seu nome:" of oDlg PIXEL
-@06,@40 GET oGet VAR cNome of oDlg PIXEL
+@06,@10 SAY "Digite o seu nome:" OF oDlg PIXEL
+@06,@60 GET oGet VAR cNome OF oDlg SIZE 70,10 PIXEL
+
+@30,@40 BUTTON oBotao PROMPT "OK" OF oDlg PIXEL SIZE 30,10 ACTION Alert("O nome digitado foi: " + cNome)
 
 ACTIVATE MSDIALOG oDlg CENTERED
-
 
 Return
