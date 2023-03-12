@@ -14,3 +14,23 @@
     - Não possui suporte para desenvolvimento utilizando a arquitetura MVC
         - Porque respeita o escopo das funções e o MVC possui funções estáticas
 */
+
+#INCLUDE "TOTVS.CH"
+User Function MinhaPrimeiraTela()
+Local oDlg as Object
+Local oGet as Object
+Local cNome as Char
+
+cNome := Space(30)
+
+DEFINE MSDIALOG oDlg TITLE "Minha Primeira Tela"
+oDlg:nWidth:= 200 //pixel
+oDlg:Height:= 200
+
+@06,@10 SAY "Digite o seu nome:" of oDlg PIXEL
+@06,@40 GET oGet VAR cNome of oDlg PIXEL
+
+ACTIVATE MSDIALOG oDlg CENTERED
+
+
+Return
